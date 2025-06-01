@@ -1,0 +1,439 @@
+#@ # 
+#@ # Running icc2_shell Version W-2024.09 for linux64 -- Aug 25, 2024
+#@ # Date:   Sun Jun  1 02:47:57 2025
+#@ # Run by: student@ict-chipin.sot.pdpu.ac.in
+#@ 
+
+start_gui
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+open_lib /home/student/RTL2GDSII/ICCII/SHIFTER_LIB
+open_block /home/student/RTL2GDSII/ICCII/SHIFTER_LIB:shifter.design
+open_block /home/student/RTL2GDSII/ICCII/SHIFTER_LIB:DR_DR_itr0.design
+win_set_filter -visible -class cell -filter {assembly_die_margin bridge clock_margin filler_allowed_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin substrate} -layer {}
+win_set_filter -visible -class pseudo_bump -filter {deleted} -layer {}
+win_set_filter -visible -class pseudo_tsv -filter {deleted} -layer {}
+win_set_filter -visible -class placement_blockage -filter {wiring} -layer {0-82}
+win_set_filter -expand_cell_types {soft_macro  }
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group shape via terminal fill_cell metal_area metal_area_hole placement_blockage }
+win_set_filter -class cell -filter {array assembly_die_margin bridge clock_margin filler_allowed_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin substrate} -layer {}
+win_set_filter -class pseudo_bump -filter {deleted} -layer {}
+win_set_filter -class pseudo_tsv -filter {deleted} -layer {}
+win_set_filter -class placement_blockage -filter {wiring} -layer {0-82}
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group shape via metal_area metal_area_hole placement_blockage }
+link_block
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-1.685 16.433}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-0.842 16.433}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-0.421 16.433}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-0.210 16.421}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {0.275 16.330}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {0.275 16.330}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {4.189 16.330}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {4.189 16.342}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {17.457 17.184}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {17.083 16.599}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.770 -0.315}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.770 -0.161}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.770 -0.072}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {0.770 -0.036}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {11.035 13.953}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {11.035 13.953}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {11.035 13.953}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {11.010 13.812}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {24.329 7.126}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {24.329 7.126}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {24.329 7.126}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {24.329 7.126}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {4.157 25.245}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {4.157 24.629}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {6.724 23.551}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {6.724 23.551}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {6.724 23.551}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.724 23.551}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.725 23.550}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.728 23.550}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {6.458 24.154}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.495 23.910}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.495 23.910}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.495 23.910}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.496 23.910}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.547 23.961}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-7.190 2.288}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-3.595 2.288}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-1.797 2.289}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-0.898 2.288}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.064 -0.022}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.064 -0.015}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.064 -0.006}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.064 -0.002}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.064 -0.001}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {0.064 0.000}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {0.018 0.004}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {0.025 0.003}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {0.239 0.013}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {0.736 0.081}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {0.738 0.080}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {25.560 7.434}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {19.273 14.338}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {19.273 14.338}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {19.273 14.338}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {19.020 13.937}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {19.017 13.939}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {19.132 13.965}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {19.119 13.953}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {13.500 18.674}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {13.500 18.674}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {13.501 18.674}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {13.501 18.674}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {13.500 18.673}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {14.181 18.668}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {17.708 17.854}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {17.682 17.854}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {14.384 19.214}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {16.341 18.463}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {16.335 18.469}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCoreArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPortShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCell -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showFillInst -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMovebound -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoute -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouted -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContact -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTopology -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBlockage -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPowerplanRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showGuide -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpPlan -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoBump -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoTSV -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMetalArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showEditGroup -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showAnnotationObject -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRuler -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showText -value false
+win_set_filter -visible -class annotation_shape -filter {annotation ruler}
+win_set_select_class -visible {port block_shielding annotation_shape die_area }
+win_set_filter -class annotation_shape -filter {annotation ruler}
+win_set_select_class {port annotation_shape }
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCell -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPortShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPin -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPin -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectDieArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCoreArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectCoreArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPortShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showFillInst -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectFillInst -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPin -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPASiteArray -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPASiteArray -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPACore -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPACore -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMovebound -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPlacementAttraction -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showVoltageArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoute -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouted -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContact -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTopology -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showWiringGrid -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectWiringGrid -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBlockage -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPowerplanRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPGroup -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRPGroup -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPKeepout -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showGuide -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouteCorridorShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showManufacturingShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpPlan -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoBump -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoTSV -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMetalArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContactRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showEditGroup -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRailAnalysisTap -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTextObject -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectTextObject -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showAnnotationObject -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRuler -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showText -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectDieArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectCoreArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPort -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPortShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectCell -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectFillInst -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPin -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPASiteArray -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPACore -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectMovebound -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPlacementAttraction -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectVoltageArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRoute -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRouted -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectContact -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectTopology -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectWiringGrid -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectBlockage -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPowerplanRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRPGroup -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRPKeepout -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectGuide -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRouteCorridorShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectManufacturingShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectBumpPlan -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectBumpRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPseudoBump -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectPseudoTSV -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectMetalArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectContactRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectEditGroup -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRailAnalysisTap -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectTextObject -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectAnnotationObject -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRuler -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCoreArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPort -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPortShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCell -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showFillInst -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPin -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPASiteArray -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPACore -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMovebound -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPlacementAttraction -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showVoltageArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoute -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouted -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContact -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTopology -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showWiringGrid -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBlockage -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPowerplanRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPGroup -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPKeepout -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showGuide -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouteCorridorShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showManufacturingShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpPlan -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoBump -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoTSV -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMetalArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContactRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showEditGroup -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRailAnalysisTap -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTextObject -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showAnnotationObject -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRuler -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showText -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCoreArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPort -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPortShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCell -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showFillInst -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPin -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPASiteArray -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPACore -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMovebound -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPlacementAttraction -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showVoltageArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoute -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouted -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContact -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTopology -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showWiringGrid -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBlockage -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPowerplanRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPGroup -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPKeepout -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showGuide -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouteCorridorShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showManufacturingShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpPlan -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoBump -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoTSV -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMetalArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContactRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showEditGroup -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRailAnalysisTap -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTextObject -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showAnnotationObject -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRuler -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showText -value true
+win_set_filter -visible -class voltage_area -filter {guardband}
+win_set_filter -visible -class annotation_shape -filter {}
+win_set_filter -visible -class site_row -filter {io}
+win_set_filter -visible -class track -filter {non_preferred} -layer {}
+win_set_select_class -visible {cell pin port bound rp_group rp_blockage tap routing_blockage shaping_blockage pg_region manufacturing_shape bump_region pseudo_bump pseudo_tsv pin_blockage routing_corridor_shape block_shielding placement_attraction voltage_area topology_node topology_edge topology_repeater annotation_shape core_area die_area site_row site_array text edit_group shape via via_region terminal fill_cell track metal_area metal_area_hole placement_blockage }
+win_set_select_class {annotation_shape }
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.053 14.279}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.053 14.279}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.053 14.279}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.053 14.279}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.053 14.279}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.053 14.279}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.053 14.279}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.053 14.325}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.053 14.325}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {4.940 16.222}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.075 16.222}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.064 16.221}
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCoreArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPort -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPortShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCell -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showFillInst -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPin -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPASiteArray -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPACore -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMovebound -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPlacementAttraction -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showVoltageArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoute -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouted -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContact -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTopology -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showWiringGrid -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBlockage -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPowerplanRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPGroup -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPKeepout -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showGuide -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouteCorridorShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showManufacturingShape -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpPlan -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoBump -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoTSV -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMetalArea -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContactRegion -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showEditGroup -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRailAnalysisTap -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTextObject -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showAnnotationObject -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRuler -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showText -value false
+win_set_filter -visible -class annotation_shape -filter {annotation ruler}
+win_set_select_class -visible {block_shielding annotation_shape die_area }
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCoreArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPort -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPortShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showCell -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showFillInst -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPin -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPASiteArray -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPACore -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMovebound -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPlacementAttraction -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showVoltageArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoute -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouted -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContact -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTopology -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showWiringGrid -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBlockage -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPowerplanRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPGroup -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRPKeepout -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showGuide -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouteCorridorShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showManufacturingShape -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpPlan -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showBumpRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoBump -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPseudoTSV -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showMetalArea -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showContactRegion -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showEditGroup -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRailAnalysisTap -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showTextObject -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showAnnotationObject -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRuler -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showText -value true
+win_set_filter -visible -class annotation_shape -filter {}
+win_set_select_class -visible {cell pin port bound rp_group rp_blockage tap routing_blockage shaping_blockage pg_region manufacturing_shape bump_region pseudo_bump pseudo_tsv pin_blockage routing_corridor_shape block_shielding placement_attraction voltage_area topology_node topology_edge topology_repeater annotation_shape core_area die_area site_row site_array text edit_group shape via via_region terminal fill_cell track metal_area metal_area_hole placement_blockage }
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {15.452 15.355}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {15.452 15.355}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {15.452 15.355}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {15.452 15.355}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {15.452 15.356}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {15.452 15.355}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {15.452 15.355}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {15.454 15.353}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {15.455 15.358}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {15.444 15.370}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {15.467 15.393}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {6.093 22.471}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {6.093 22.470}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {6.093 22.471}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {5.753 22.506}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.527 21.510}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.551 21.497}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {6.189 19.235}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {10.597 12.295}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {9.448 12.248}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.956 12.319}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.933 12.341}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.301 12.293}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.316 11.989}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.011 11.836}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {7.000 11.935}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {7.011 11.966}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {7.012 11.964}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {7.645 11.682}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {18.580 -0.675}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {2.361 14.158}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {2.361 14.158}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {2.797 13.927}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {2.990 13.799}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.288 7.999}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.288 7.999}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.288 7.999}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {5.800 20.009}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {5.774 20.009}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {5.761 20.009}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.267 20.009}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.261 20.009}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {5.235 17.238}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {5.236 17.237}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.236 17.237}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {5.236 17.237}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {-0.051 18.264}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {4.106 20.369}
+gui_zoom -window [gui_get_current_window -view] -rect [get_attribute [current_design ] boundary_bbox ] -fit
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {10.522 22.678}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {10.522 22.678}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {9.739 20.959}
+open_block /home/student/RTL2GDSII/ICCII/SHIFTER_LIB:DR_DR_itr0.design
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {12.114 19.983}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {12.268 19.752}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.623 9.178}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.623 9.178}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.623 9.179}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {8.624 9.178}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {8.772 9.383}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {9.460 11.100}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {9.473 11.100}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {24.336 15.182}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {24.336 15.182}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {23.605 15.015}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {23.364 14.873}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {22.285 14.051}

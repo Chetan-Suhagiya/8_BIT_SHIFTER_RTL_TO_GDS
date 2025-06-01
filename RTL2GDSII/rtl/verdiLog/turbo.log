@@ -1,0 +1,3 @@
+Command Line: /home/synopsys_install/verdi/W-2024.09/platform/LINUXAMD64/bin/Novas -ssf novas.fsdb -nologo
+uname(Linux ict-chipin.sot.pdpu.ac.in 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 24 13:05:10 UTC 2024 x86_64)
+au time 53.614469 3.148658 0.265343 delta 266956800 266956800 total 1275019264 1275019264
