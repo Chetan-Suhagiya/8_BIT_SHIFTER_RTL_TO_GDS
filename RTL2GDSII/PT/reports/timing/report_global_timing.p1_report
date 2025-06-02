@@ -3,7 +3,7 @@ Report : global_timing
 	-format { narrow }
 Design : shifter
 Version: W-2024.09
-Date   : Sun Jun  1 01:46:00 2025
+Date   : Mon Jun  2 07:19:46 2025
 ****************************************
 
 No setup violations found.
