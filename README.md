@@ -1,12 +1,11 @@
 # 8_BIT_SHIFTER_RTL_TO_GDS
 
-## 📄 Abstract
+##  Abstract
 
 This README provides a complete overview of the backend ASIC design flow for an 8-bit bidirectional shifter using Synopsys EDA tools. It integrates RTL design, simulation, logic synthesis, physical implementation, signoff checks, and GDSII generation. The goal is to understand the methodology of achieving a timing-closed, power-optimized, and fabrication-ready layout from Verilog RTL using the industry-standard SAED 32nm library.
 
----
 
-## 📚 Table of Contents
+##  Table of Contents
 
 - [Introduction](#1-introduction)
 - [Problem Statement](#2-problem-statement)
@@ -24,9 +23,7 @@ This README provides a complete overview of the backend ASIC design flow for an 
 - [Key Scripts and File Structure](#9-key-scripts-and-file-structure)
 - [Summary of Results](#10-summary-of-results)
 - [Learning and Outcomes](#11-learning-and-outcomes)
-- [Changes Made During Project Execution](#12-changes-made-during-project-execution)
 
----
 
 ## 1. Introduction
 
@@ -35,7 +32,6 @@ This project demonstrates an RTL-to-GDSII backend implementation of an 8-bit shi
 **Technology Node**: SAED 32nm  
 **Library**: `saed32rvt_tt0p78vn40c.db`
 
----
 
 ## 2. Problem Statement
 
@@ -55,7 +51,6 @@ This project demonstrates an RTL-to-GDSII backend implementation of an 8-bit shi
   - Max Clock Frequency (positive slack < 1 ns)
   - Total Power Consumption
 
----
 
 ## 3. RTL Design and Verification
 
@@ -95,7 +90,6 @@ vcs -full64 shifter_rtl.v shifter_tb.v -debug_access+all -lca -kdb
 verdi -ssf novas.fsdb -nologo
 ```
 
----
 
 ## 4. Logic Synthesis
 
@@ -109,7 +103,6 @@ verdi -ssf novas.fsdb -nologo
 - Power: 15.27 µW
 - Leaf Cells: 32 (preliminary)
 
----
 
 ## 5. Physical Implementation
 
@@ -149,7 +142,6 @@ verdi -ssf novas.fsdb -nologo
   - Slack: 1.23 ns
   - Power: 349 µW
 
----
 
 ## 6. Physical Verification (DRC/LVS)
 
@@ -159,7 +151,6 @@ verdi -ssf novas.fsdb -nologo
   - LVS (Layout vs Schematic)
   - Antenna Rule Check
 
----
 
 ## 7. Static Timing Analysis (STA)
 
@@ -169,14 +160,12 @@ verdi -ssf novas.fsdb -nologo
 - Clock Period: 2.5 ns
 - Frequency: 400 MHz
 
----
 
 ## 8. GDSII Generation
 
 - Final GDSII file generated post-routing and verification.
 - File: `shifter.gds`
 
----
 
 ## 9. Key Scripts and File Structure
 
@@ -209,7 +198,6 @@ RTL2GDSII_Project/
 │   └── shifter.gds
 ```
 
----
 
 ## 10. Summary of Results
 
@@ -222,7 +210,6 @@ RTL2GDSII_Project/
 | Buffer Cells       | 32                 |
 | GDSII Generated    | ✅ Yes             |
 
----
 
 ## 11. Learning and Outcomes
 
@@ -230,16 +217,3 @@ RTL2GDSII_Project/
 - Learned debugging of TCL scripts and tool constraints.
 - Gained hands-on experience in power, area, and timing optimization.
 - Developed reusable scripting skills for VLSI projects.
-
----
-
-## 12. Changes Made During Project Execution
-
-- Created custom SDC (`shifter.sdc`)
-- Updated TCL scripts:
-  - Changed design names, paths
-  - Set don't-use cells
-  - Updated floorplan shape and offsets
-- Verified and tuned constraints for better QoR
-- Wrote and validated testbench and RTL design
-
